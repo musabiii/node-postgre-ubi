@@ -12,6 +12,7 @@ class UserController {
   }
 
   async getUsers(req, res) {
+    console.log("try to get users");
     const persons = await db.query(`SELECT * FROM PERSON`);
     res.json(persons.rows);
   }

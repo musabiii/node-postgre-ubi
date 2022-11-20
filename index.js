@@ -10,6 +10,9 @@ const PORT = process.env.PORT ?? 3000;
 
 app.use('/api',userRouter)
 app.use('/api',postRouter)
+app.get("/",(req,res)=>{
+  res.send("Ok");
+})
 
 
 

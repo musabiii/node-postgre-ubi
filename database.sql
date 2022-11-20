@@ -1,3 +1,4 @@
+
 create table person(
     id serial primary key,
     name varchar(255),
@@ -11,3 +12,5 @@ create table post(
     user_id INTEGER,
     foreign key (user_id) references person (id)
 );
+
+INSERT INTO person (name,surname) values ('musabi','mambetov');
